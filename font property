@@ -1,0 +1,32 @@
+.........................................................................HTML CODE...............................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>The Night King</h1>
+  
+     <p>The night king is a legendary persona,praised in some noble houses of north America
+
+     </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta    asperiores doloribus ratione magni quia. A, obcaecati dolor. Nulla enim tempora, vel quaerat voluptatum facere natus quisquam aperiam alias, pariatur suscipit!
+    </p>
+    
+</body>
+</html>
+
+
+..........................................................................css code.........................................................
+
+h1{
+  font-family :Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: x-large;
+}
