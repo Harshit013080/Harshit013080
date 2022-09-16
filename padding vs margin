@@ -1,0 +1,41 @@
+.............................................................................Html code..................................................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+  </div>
+
+</body>
+</html>
+
+............................................................................CSS CODE...........................................................................
+
+.box1,.box2{
+  height:100px;
+  width:100px
+}
+
+.box1{
+  margin : 30px;
+  background-color: skyblue;
+}
+
+.box2{
+  padding: 30px;
+  background-color: skyblue
+}
+
+/*To see if we change something in parent element will there be any change in the margin*/
+
+.wrapper{
+  background-color:orange;
+}
