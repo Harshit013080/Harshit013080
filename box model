@@ -1,0 +1,27 @@
+........................................................................HTML CODE..................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint a, autem accusamus reiciendis consequuntur, ratione et asperiores repudiandae perspiciatis assumenda nostrum aspernatur libero ad dolorem dolores quas recusandae incidunt. Id est, magni omnis, accusantium reiciendis numquam architecto saepe esse vitae quasi molestias cum! Impedit et officiis cum laborum mollitia delectus accusantium eaque velit debitis nihil vitae animi, ut corporis molestias at, eos quae iure, labore molestiae illo! Ad odit est commodi et saepe incidunt repellat dignissimos sed! Fuga, dolorum vel!
+    </p>
+  </div>
+</body>
+</html>
+
+........................................................................CSS CODE..................................................................
+
+div{
+  text-align: justify;
+  padding : 25px;
+  border : 8px solid black;
+  margin : 25px;
+}
