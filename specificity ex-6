@@ -1,0 +1,44 @@
+.......................................................................HTMLCODE............................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <style>
+    .fav{
+      color: red;
+    }
+
+    .fav{
+      color: green;
+    }
+    
+  </style>
+  
+   <link rel="stylesheet" href="specificity.css">
+  
+  <title>Document</title>
+  
+</head>
+<body>
+  
+<ul id="summer" >
+  <li>Mountain Dew</li>
+  <li class="fav" >Appy Fizzy</li>
+  <li>Jeeru</li>
+</ul>
+
+</body>
+</html>
+
+....................................................................CSS CODE...............................................................................
+
+.fav{
+  color : brown;
+}
+
+/*As you expected the brown color should be shown but this is not working bcz the link is not properly done...*/
