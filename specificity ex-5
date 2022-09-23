@@ -1,0 +1,46 @@
+..........................................................................HTML CODE.........................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="stylesheet" href="specificity.css">
+  
+  
+    <style>
+    .fav{
+      color: red;
+    }
+
+    .fav{
+      color: green;
+    }
+    
+  </style>
+  
+  
+  <title>Document</title>
+</head>
+<body>
+  
+<ul id="summer" >
+  <li>Mountain Dew</li>
+  <li class="fav" >Appy Fizzy</li>
+  <li>Jeeru</li>
+</ul>
+
+</body>
+</html>
+
+...........................................................................CSS CODE.................................................................
+
+.fav{
+  color : brown;
+}
+
+/*As you can see that the output is of green color, hence this is because the style tag is written 
+after the link tag and as we know that the lqast tag will work so the style tag is accepted */
