@@ -1,0 +1,37 @@
+...........................................................................HTML CODE.............................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Document</title>
+</head>
+<body>
+  
+<ul id="summer" >
+  <li>Mountain Dew</li>
+  <li class="fav" style="color : blue">Appy Fizzy</li>
+  <li>Jeeru</li>
+</ul>
+
+</body>
+</html>
+
+...........................................................................css code.................................................................
+
+.fav{
+  color: red;
+}
+
+/*
+As you can see in the output its the blue color which is mentioned in the li tag, hence blue is shown bcz that type of syntax has the high specificity then this type of syntax 
+*/
+
+.fav{
+  color: green;
+}
