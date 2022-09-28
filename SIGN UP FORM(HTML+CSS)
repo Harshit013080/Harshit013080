@@ -1,0 +1,226 @@
+..................................................................HTML CODE................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div>
+    <form>
+      <table cellspacing="0">
+
+        <tr class="o"><td colspan="2">Sign Up</td></tr>
+        
+        <tr>
+          <td class="r">First Name</td>
+          <td><input placeholder="Enter First Name " type="text" name="name" id="name"></td>
+        </tr>
+
+        <tr>
+          <td class="r">Last Name</td>
+          <td><input placeholder="Enter Last Name" type="text" name="last_name" id="last_name"></td>
+        </tr>
+
+        <tr>
+          <td class="r">Date of Birth</td>
+          <td>
+            <select>
+              <option>Date</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              </select>
+
+              <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>july</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+
+              <select>
+                <option>Year</option>
+                <option>1980</option>
+                <option>1981</option>
+                <option>1982</option>
+                <option>1983</option>
+                <option>1984</option>
+                <option>1985</option>
+                <option>1986</option>
+                <option>1987</option>
+                <option>1988</option>
+                <option>1989</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+              </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="r">Gender</td>
+          <td><input type="radio" name="gender" id="m">Male
+              <input type="radio" name="gender" id="f">Female</td>
+        </tr>
+
+        <tr>
+          <td class="r">Country</td>
+          <td>
+            <select>
+              <option>Select</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>japan</option>
+              <option>UK</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="r">Email</td>
+          <td><input placeholder="Enter E-mail" type="email" name="email" id="email"></td>
+        </tr>
+
+        <tr>
+          <td class="r">Phone</td>
+          <td><input type="number" name="phone" id="phone"></td>
+        </tr>
+
+        <tr>
+          <td class="r">Password</td>
+          <td><input type="password" name="pass" id="pass"></td>
+        </tr>
+
+        <tr>
+          <td class="r">Confirm Password</td>
+          <td><input type="password" name="c_pass" id="c_pass"></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="agree" id="agree">I agree to the terms of use</td>
+        </tr>
+
+        <tr  class="o">
+          <td colspan="2" class="r"><input type="submit" value="submit"  class="submit">
+          <input type="reset" value="cancel" class="reset"></td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+  
+</body>
+</html>
+
+.......................................................................CSS CODE.................................................................
+
+.r{
+  text-align:right;
+}
+
+td{
+  padding: 6px
+}
+
+.o{
+  background-color: #de8704;
+}
+
+tr{
+  background-color: #222536;
+   border-radius: 5px;
+}
+
+table{
+  background-color: #222536;
+  width: 400px;
+  height: 400px;
+}
+
+body{
+				color: #d2d636;
+			}
+
+.submit,.reset{
+  padding:5px 15px;
+  border: none;
+}
+
+.submit{
+  background-color: lightblue;
+}
+
+.reset{
+  background-color: lightblue;
+}
