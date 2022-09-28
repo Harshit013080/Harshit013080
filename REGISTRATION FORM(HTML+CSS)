@@ -1,0 +1,166 @@
+.....................................................................HTML CODE...........................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <span>
+  <form>
+    <table border="3" cellspacing="5px">
+      <tr>
+        <th colspan="2" class="heading">Registration form</th>
+      </tr>
+      <tr>
+        <td><u>Enter Name:</u></td>
+        <td><input type="text" name="name" id="name"></td>
+      </tr>
+      
+      <tr>
+        <td><u>Enter Password:</u></td>
+        <td><input type="password" name="pass" id="pass"></td>
+      </tr>
+
+      <tr>
+        <td><u>Enter Address:</u></td>
+        <td><textarea rows="3"></textarea></td>
+      </tr>
+
+      <tr>
+        <td><u>Select Game:</u></td>
+        <td>
+          <input type="checkbox" class="fing" value="cricket" id="game">Cricket<br>
+          <input type="checkbox" class="fing" value="football"  id="game">Football<br>
+          <input type="checkbox" class="fing" value="Badminton"  id="game">Badminton<br>
+          <input class="fing" type="checkbox" value="volleyball"  id="game">Volleyball<br>
+          <input class="fing" type="checkbox" value="Hockey"  id="game">Hockey<br>
+        </td>
+      </tr>
+
+      <tr>
+        <td><u>Gender:</u></td>
+        <td>
+          <input type="radio" class="fing" name="gender" value="male" id="m">Male
+          <input type="radio" name="gender" class="fing" value="female" id="f">Female
+          <input type="radio" class="fing" value="others" name="gender" id="o">Other
+        </td>
+      </tr>
+
+      <tr>
+        <td><u>Select Age:</u></td>
+        <td>
+          <select class="fing" class="age">
+            <option class="fing">select</option>
+            <option class="fing">15</option>
+            <option class="fing">16</option>
+            <option class="fing">17</option>
+            <option class="fing">18</option>
+            <option class="fing">19</option>
+            <option class="fing">20</option>
+            <option class="fing">21</option>
+            <option class="fing">More than 21</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><u>Select Photo:</u></td>
+        <td><input type="file" id="pointer"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+        <input type="button" value="click me" class="click_me"/>
+        <input type="reset" value="reset" class="reset" /> <input type="submit" value="Submit Form"/> 
+        </td> 
+      </tr>
+
+    </table>
+  </form>
+  </span>
+    
+</body>
+</html>
+
+........................................................................CSS CODE..........................................................................
+
+*{
+  font-size:17px;
+  box-sizing: border-box;
+}
+
+.fing{
+  cursor: pointer;
+}
+
+.heading{
+  font-size:30px;
+  text-align: center;
+  
+  background-color: orange;
+  border: 1px solid black;
+}
+
+th{
+  border-radius: 5px;
+}
+
+td{
+  padding: 2px 15px;
+  background-color: #0CF;
+  border-radius: 5px;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
+  margin: 15px 30px;
+}
+
+
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="password"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,textarea{
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="password"]{
+  width: 70%;
+}
+
+select{
+  width:25%
+}
+
+span{
+  background-color:lightblue;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{
+  width:30%; 
+  background-color: orange;
+  font-family:800;
+  border: none;
+}
+
+table{
+  background-color: #FFA;
+   border-radius: 7px;
+}
+
