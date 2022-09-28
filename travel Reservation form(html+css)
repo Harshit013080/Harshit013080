@@ -1,0 +1,110 @@
+..........................................................................HTML CODE...........................................................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="container">
+  <form action="" method="post">
+    <h1 class="heading">TRAVEL RESERVATION FORM</h1>
+    <hr>
+    <h3>* Denotes mendatory</h3>
+
+    <label>*Full Name</label><br>
+    <input type="text" required name="name" id="name" placeholder="Firstname Lastname"><br>
+    <label>*Email address:</label><br>
+    <input type="email" required name="email" id="email" placeholder="example@gmail.com"><br>
+
+    <label>Select Tour Package*</label><br>
+    <select required name="package">
+      <option  value="select">select</option>
+      <option  value="Kashmir">Kashmir</option>
+      <option  value="Goa">Goa</option>
+      <option  value="Haridwar">Haridwar</option>
+      <option  value="Rajasthan">Rajasthan</option>
+    </select><br>
+
+    <label>Arival date*:</label><br>
+    <input required type="date" name="arrival_date" id="arrival_date"><br>
+
+    <label>Number of person's*:</label><br>
+    <input required  type="number" name="person" id="person"><br>
+
+    <label>What would you want to avail*</label><br>
+    Boarding<input class="tnc" type="checkbox" name="facilities" required  value="Boarding"><br>
+    Boating<input class="tnc" type="checkbox" name="facilities" required  value="Boating"><br>
+    Fooding<input class="tnc" type="checkbox" name="facilities" required  value="Fooding"><br>
+    Sight seeing<input class="tnc" type="checkbox" name="facilities" required value="Sight seeing"><br>
+
+    <label>Discount Coupon Code:</label><br>
+    <input type="text" name="code" id="code"><br>
+
+    <div >
+    <label>Terms and conditions*:</label><br>
+    <input type="radio" class="tnc" required name="tnc" value="agree">I Agree
+    <input type="radio" class="tnc" required name="tnc" value="dont_agree">I disagree
+    </div>
+    <br>
+    <br>
+
+    <input type="submit" class="submit" value="Complete Reservation">
+    
+  </form>
+</div>
+
+</body>
+</html>
+
+....................................................................CSS CODE...................................................................................
+
+.heading{
+  text-align: center;
+  font-weight:800;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 8px;
+  margin:15px 30px;
+  font-size:17px;
+}
+
+.container{
+  background-color: aqua;
+  padding: 5px 15px 20px 20px;
+  border-radius: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select{
+  width:100%;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+input[type="submit"]{
+  background-color: orange;
+  padding: 5px 15px;
+  border:none;
+  display: inline;
+  width: 22%;
+  cursor: pointer;
+}
+
+.tnc{
+  cursor: pointer;
+}
