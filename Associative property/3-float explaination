@@ -1,0 +1,22 @@
+public class Main
+
+{
+	public static void main(String[] args) {
+		System.out.println("...Just to explain assosciativity property...");
+		
+		float a = 7/4 * 9/2;
+		
+		//  =1 * 9/2    (7 and 4 are integer so they will give value as integer)
+		//  =9 / 2      (same thing applies here)
+		//  =4          (ANSWER)
+		
+		System.out.println(a);
+		System.out.println();
+		System.out.println("Let's add .0f at the end of the number's");
+		System.out.println();
+		
+		float b = 7/4.0f * 9/2.0f;
+		System.out.println(b);
+	}
+}
+
