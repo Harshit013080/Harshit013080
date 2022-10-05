@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		
+		System.out.println("...Different waya to print in java...");
+		
+		System.out.println("hello there"); //no new line 
+		System.out.println("Adding ln you will get the new line");
+		
+		int a = 9;
+		float b = 5.876f;
+		
+		System.out.printf("the value of a is %d and the value of b is %f",a,b );
+		System.out.println();
+		System.out.print("the below function will work the same as printf ");
+		System.out.println();
+		System.out.format("the value of a is %d and the value of b is %f",a,b);
+	}
+}
