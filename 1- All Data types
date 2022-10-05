@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		byte age = 15;
+	int age2 = 20;
+	short age3 = 25;
+	long number = 54444444444444444L;
+	float f1 = 0.12f;
+	double d1 = 0.123;
+	char ch = 'I';
+	boolean a = true;
+	String k = " am Harshit";
+	System.out.print(ch);
+	System.out.print(k);
+	}
+}
+
