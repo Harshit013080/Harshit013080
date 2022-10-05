@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("To find the doube space and three space's");
+		
+		System.out.println();
+		String one = "hello  How are   you?";
+		
+		System.out.println(one.indexOf("  "));
+		System.out.println(one.indexOf("   "));
+	}
+}
