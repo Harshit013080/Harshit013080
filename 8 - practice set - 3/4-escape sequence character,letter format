@@ -1,0 +1,12 @@
+public class Main
+{
+  public static void main (String[]args)
+  {
+    System.out.println ("Letter Formating using escapse sequence character");
+    System.out.println ();
+
+    String letter =
+      "Dear \"Harshika\" \nHow are you \ni guess you are \n\t well...";
+      System.out.println (letter);
+  }
+}
