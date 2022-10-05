@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("...SOME ESCAPE SEQUENCE CHARACTERS...");
+		System.out.println();
+		
+		System.out.println("hey there my name is \"HARSHIT\"  "); //using \" to just get "
+		System.out.println();
+		
+		System.out.println("hey there my name is \t \"HARSHIT\"  ");//to get tab \t
+		System.out.println();
+		
+		System.out.println("hey there my name is \n \"HARSHIT\"  ");//to get to the next line \n
+		System.out.println();
+		
+		System.out.println("this are some of the main,you can search other on browser");
+		
+	}
+}
