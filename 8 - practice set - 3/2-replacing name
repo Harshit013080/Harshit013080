@@ -1,0 +1,24 @@
+Question :: program to thanks someone and then replace the name...
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    System.out.println ("Thanking message");
+    System.out.println ();
+
+    String letter = "Dear harshit , Thanks a lot";
+      System.out.println (letter);
+      System.out.println ();
+
+      System.out.println ("...Sorry, there is some misunderstanding...");
+      System.out.println ();
+
+      System.out.println (letter.replace ("harshit", "harshika"));
+      System.out.println ();
+
+      System.out.println ("Sorry for the inconvenience");
+      System.out.println ("...THANK YOU...");
+
+  }
+}
