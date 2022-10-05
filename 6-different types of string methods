@@ -1,0 +1,118 @@
+.........................................................USED GDB COMPILER(ONLINE).......................................................
+
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    System.out.println ("...Diff types of String Methods...");
+
+    //  String Name;
+    //  Name = new String("Harshit");
+    //  System.out.println(Name);
+
+    String name = "Harshit";
+      System.out.println (name);
+      System.out.println ();
+
+    //to get the length
+      System.out.println ("1st method");
+    int value = name.length ();
+      System.out.println (value);
+      System.out.println ();
+
+    //to print in lower case 
+      System.out.println ("2nd method");
+    String lstring = name.toLowerCase ();
+      System.out.println (lstring);
+      System.out.println ();
+
+    //to print in upper case
+      System.out.println ("3rd method");
+    String ustring = name.toUpperCase ();
+      System.out.println (ustring);
+      System.out.println ();
+
+    //to use the trim function
+      System.out.println ("4th method");
+    String notTrimmed = "    Harshika    ";
+      System.out.println (notTrimmed);
+    String Trimmed = notTrimmed.trim ();
+      System.out.println (Trimmed);
+      System.out.println ();
+
+    //to start from a particular IncompatibleClassChangeError
+      System.out.println ("5th method");
+      System.out.println (name.substring (1));	//write number acc to index 
+      System.out.println ();
+
+    //to get output from between the String
+      System.out.println ("6th method");
+      System.out.println (name.substring (1, 6));	//the end index is not counted here,u get output of the
+      System.out.println ();	//preceding index
+
+    //to replace the characters
+      System.out.println ("7th method");
+      System.out.println (name.replace ('s', 'p'));
+      System.out.println ();
+
+      System.out.println (name.replace ("shit", "mit"));	//use double quote for more than one character
+      System.out.println ();
+
+    //to see if the name starts with that characters or not
+    //yes - true
+    //no - false
+      System.out.println ("8th method");
+      System.out.println (name.startsWith ("Ha"));
+      System.out.println (name.startsWith ("Ak"));
+      System.out.println ();
+
+    //to see if the name ends with these characters or not
+    //yes - true
+    //no - false
+      System.out.println ("9th method");
+      System.out.println (name.endsWith ("Ak"));
+      System.out.println (name.endsWith ("it"));
+      System.out.println ();
+
+    //to see the character at that position 
+      System.out.println ("10th method");
+      System.out.println (name.charAt (5));
+      System.out.println ();
+
+    //to see the index of the character
+      System.out.println ("11th method");
+      System.out.println ("WE ARE MAKING A NEW STRING \"HARRY \" ");
+      System.out.println (name.indexOf ('s'));
+      System.out.println (name.indexOf ("ar"));
+    //making a new string for explanation of further ClassNotFoundException
+      System.out.println ();
+      System.out.println ("12th method");
+    String newname = "Harry";
+      System.out.println (newname.indexOf ('r'));
+      System.out.println (newname.indexOf ('r', 3));	//will start searching from the index 3
+      System.out.println ();
+
+    //now the counting will start from behind but the index will remain same as default
+      System.out.println ("13th method");
+      System.out.println (newname.lastIndexOf ('r'));
+      System.out.println ();
+      System.out.println ("14th method");
+      System.out.println (newname.lastIndexOf ('r', 2));
+      System.out.println ();
+
+    //to see that the Stringis equal or not
+      System.out.println ("15th method");
+      System.out.println ("Using the same string as before \" HARSHIT \" ");
+      System.out.println (name.equals ("Harshit"));	//this thing is gonna be case sensitive
+      System.out.println ();
+    //not considering the case sensitivity now
+
+      System.out.println ("16th method");
+      System.out.println (name.equalsIgnoreCase ("harshit"));	//h is small,in real string H is capital
+      System.out.println ();
+
+      System.out.println ("THANK YOU");
+
+  }
+}
