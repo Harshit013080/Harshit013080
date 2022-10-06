@@ -1,0 +1,87 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main
+{
+    public static void main(String[] args) {
+	
+	    Scanner sc = new Scanner(System.in);
+	    Random comp = new Random();
+	    
+	    int num;
+	    
+		System.out.println("....Here are the Instruction....");
+		System.out.println();
+		System.out.println("Paper beats Rock");
+		System.out.println("Scissor beats paper");
+		System.out.println("Rock beats Scissor");
+		System.out.println();
+		System.out.println("1 - Rock");
+		System.out.println("2 - Paper");
+		System.out.println("3 - Scissor");
+		System.out.println();
+		System.out.println("You just have to write a number,");
+		System.out.println("your input will be compared to the computer's");
+		System.out.println();
+		System.out.println("Winner Will be anounced after 5 Games");
+		System.out.println("If both of you have equal win's, PLEASE PLAY AGAIN");
+		System.out.println();
+		
+		int number;
+		
+		int count_c= 0;
+		int count_u= 0;
+		
+		for(int i=1;i<=5;i++) {
+		    number = 1+comp.nextInt(3);
+		   
+		   System.out.print("Enter your number: ");
+		   num = sc.nextInt();
+		   
+		   System.out.print("computer's number: ");
+		   System.out.println(number);
+		   System.out.println();
+		   
+		    if((num==1  && number==1) || (num==2  && number==2) || (num==3  && number==3) ){
+		        System.out.println("\t both are equal,NO WINNER");
+		        System.out.println();
+		    }
+		    else if((num==1  && number==2) || (num==2  && number==3) || (num==3  && number==1)){
+		        System.out.println();
+		        System.out.println("\t Computer Win's");
+		        count_c++;
+		        System.out.println();
+		    }
+		    else if((num==2  && number==1) || (num==3  && number==2) || (num==1  && number==3)){
+		        System.out.println("\t You Win");
+		        count_u++;
+		        System.out.println();
+		    }  
+		        
+		    System.out.printf("\t \t total -> computer's Wins: %d \n", count_c);
+		    System.out.printf("\t \t total -> Your Win's: %d \n", count_u);  
+		    System.out.println();
+		}
+		
+		System.out.println("...........................PROCESSING.............................");
+		System.out.println();
+		System.out.println();
+		
+		if(count_c > count_u){
+		    System.out.println("COMPUTER WIN'S");
+		}
+		else if(count_c == count_u){
+		    System.out.println("WIN'S ARE EQUAL");
+		    System.out.println("PLEASE PLAY THE GAME AGAIN");
+		}
+		else{
+		    System.out.println("YOU WIN");
+		}
+		
+		System.out.println();
+		System.out.println();
+		System.out.println("Thank's for playing,hope you enjoyed it");
+		System.out.println("COME AGAIN SOON");
+		
+	}
+}
