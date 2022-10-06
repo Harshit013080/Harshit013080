@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    System.out.println ("Sum of n even number");
+    System.out.println ();
+    Scanner sc = new Scanner (System.in);
+
+    int num;
+      System.out.print ("Enter a natural number: ");
+      num = sc.nextInt ();
+
+    int sum = 0;
+    int i = num;
+    while (i > 0)
+      {
+	if (i % 2 == 0)
+	  {
+	    sum = sum + i;
+	  }
+	i--;
+      }
+
+    System.out.println (sum);
+  }
+}
