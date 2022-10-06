@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    System.out.println ("Your Result");
+
+    Scanner sc = new Scanner (System.in);
+
+    int m1, m2, m3, total_percentage, m1_percentage, m2_percentage,
+      m3_percentage;
+
+      System.out.println ();
+
+      System.out.print ("Enter your Exam1 marks: ");
+      m1 = sc.nextInt ();
+      System.out.print ("Enter your Exam2 marks: ");
+      m2 = sc.nextInt ();
+      System.out.print ("Enter your Exam3 marks: ");
+      m3 = sc.nextInt ();
+
+      System.out.println ();
+    int sum = m1 + m2 + m3;
+
+      total_percentage = (sum * 100) / 300;
+      m1_percentage = (m1 * 100) / 100;
+      m2_percentage = (m2 * 100) / 100;
+      m3_percentage = (m3 * 100) / 100;
+
+    if (m1_percentage >= 33 && m2_percentage >= 33 && m3_percentage >= 33
+	&& total_percentage >= 40)
+      {
+	System.out.println (" \t PASS");
+	System.out.println ("Congratulation's");
+	System.out.println ("...ALL THE BEST FOR YOUR FUTURE...");
+      }
+    else
+      {
+	System.out.println ("FAIL");
+	System.out.println ("Sorry");
+	System.out.println ("...you need to work hard...");
+      }
+
+  }
+}
