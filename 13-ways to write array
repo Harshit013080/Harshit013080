@@ -1,0 +1,29 @@
+public class Main
+{
+  public static void main (String[]args)
+  {
+    System.out.println ("...WAYS TO WRITE ARRAYS...");
+
+
+    //decleration and memory Allocation seperately
+    int[] marks;		//decleration
+      marks = new int[5];	//Memory Allocation
+
+    //initialization
+      marks[0] = 100;
+      marks[1] = 90;
+      marks[2] = 86;
+      marks[3] = 79;
+      marks[4] = 94;
+    //marks[5] = 92 -> will throw an error
+      System.out.println (marks[4]);
+
+    //decleration and memory Allocation together
+    int[] _marks = new int[5];
+
+    //decleration, memory Allocation and initialization together
+
+    int[] _marks_ = { 90, 98, 78, 89, 99 };
+    System.out.println (_marks_[4]);
+  }
+}
