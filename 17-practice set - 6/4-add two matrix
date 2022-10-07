@@ -1,0 +1,32 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("ADDITION OF TWO MATRIX OF 2 ROWS AND 3 COLUMNS");
+		System.out.println();
+		
+		int [][] mat1 = {{1,2,3},
+		                   {4,5,6}};
+		
+		int [][] mat2 = {{2,9,13},
+		                   {6,12,7}};
+		                   
+		int [][] result = {{0,0,0},
+		                   {0,0,0}};
+		                   
+		for (int i = 0; i < mat1.length; i++){         //row number of time
+		    for(int j = 0; j<mat1[i].length; j++){     //column number of time
+		        System.out.printf("the value set for i is %d and j is %d \n", i,j);
+		    }
+		}
+		
+		System.out.println();
+		
+		for (int i = 0; i < mat1.length; i++){
+		    for(int j = 0; j<mat1[i].length; j++){
+		        result[i][j] = mat1[i][j] + mat2[i][j];
+		        System.out.print(result[i][j] + " ");
+		    }
+		    System.out.println();
+		}
+	}
+}
