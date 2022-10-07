@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Getting the average of Array elements");
+		
+		System.out.println();
+		
+		int [] marks = {90,99,97,98,96,89,90};
+		int sum = 0;
+		int average;
+		
+		for(int element : marks){
+		    sum = sum + element;
+		}
+		System.out.printf("The total marks of al students in physics is: %d", sum);
+		System.out.println();
+		average = sum/marks.length;
+		System.out.printf("The average of the physics marks of all students is: %d", average);
+		
+	}
+}
