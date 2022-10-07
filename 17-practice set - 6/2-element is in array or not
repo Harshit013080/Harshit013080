@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("...Is the element in the array...");
+		System.out.println();
+		Scanner sc = new Scanner(System.in);
+		
+		boolean isInArray = false;
+		
+		System.out.print("Enter your number: ");
+		int _num = sc.nextInt();
+		System.out.println();
+		
+		int [] num = {98,97,95,96,90};
+		
+		for(int element : num){
+		    if(_num == element){
+		        isInArray = true;
+		    } 
+		}
+		if(isInArray){
+		    System.out.println("yes, this number is in array ");
+		}else{
+		    System.out.println("no, this number is not in array");
+		}
+	}
+}
