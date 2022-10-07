@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Sum of array");
+		System.out.println();
+		
+		float [] num = {100.4f,101.5f,102.7f,103.2f,104.1f};
+		float sum = 0.0f;
+		
+		for(int i = 1; i < num.length; i++) {
+		   sum += num[i];
+	}
+	
+	System.out.println(sum);
+	}
+}
