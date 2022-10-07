@@ -24,7 +24,7 @@ public class Main
       System.out.println ("You just have to write a number,");
       System.out.println ("your input will be compared to the computer's");
       System.out.println ();
-      System.out.println ("Winner Will be anounced after 5 Games");
+      System.out.println ("Winner Will be anounced after you complete all the rounds");
       System.
       out.println ("If both of you have equal win's, PLEASE PLAY AGAIN");
       System.out.println ();
@@ -34,7 +34,9 @@ public class Main
     int count_c = 0;
     int count_u = 0;
 
-    for (int i = 1; i <= 5; i++)
+    System.out.print("Please enter how many times do you want to play: ");
+    int n = sc.nextInt();
+    for (int i = 1; i <= n; i++)
       {
 	number = 1 + comp.nextInt (3);
 
