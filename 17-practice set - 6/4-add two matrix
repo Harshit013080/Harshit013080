@@ -1,3 +1,5 @@
+..............................................................INPUT NOT FROM USER..............................................................
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -30,3 +32,69 @@ public class Main
 		}
 	}
 }
+
+.................................................INPUT FROM THE USER...........................................................
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("PROGRAM TO ADD 2 CROSS 3 MATRIX");
+		System.out.println();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int [][] mat1 = new int[2][3];
+		int [][] mat2 = new int[2][3];
+		int [][] result = new int[2][3];
+		
+		System.out.println("Enter the values of matrix_1: ");
+		for(int i = 0; i<2 ; i++){
+		    for(int j = 0; j < 3;j ++){
+		        mat1[i][j] = sc.nextInt();
+		    }
+		}
+		
+		System.out.println();
+		
+		System.out.println("Enter the values of matrix_2: ");
+		for(int i = 0; i < 2;i++){
+		    for ( int j = 0; j < 3; j++) {
+		        mat2[i][j] = sc.nextInt();
+		    }
+		}
+		
+		System.out.println();
+		
+		System.out.println("The first matrix is: ");
+		for(int i = 0; i < 2;i++){
+		    for ( int j = 0; j < 3; j++) {
+		        System.out.print(mat1[i][j] + " ");
+		    }
+		    System.out.printf("\n");
+		}
+		
+		System.out.println();
+		
+		System.out.println("The second matrix is: ");
+		for(int i = 0; i < 2;i++){
+		    for ( int j = 0; j < 3; j++) {
+		        System.out.print(mat2[i][j] + " ");
+		    }
+		    System.out.printf("\n");
+		}
+		
+		System.out.println();
+		
+		System.out.println("The resultant matrix is: ");
+		for(int i = 0; i < 2;i++){
+		    for ( int j = 0; j < 3; j++) {
+		        result[i][j] = mat1[i][j] + mat2[i][j];
+		        System.out.print(result[i][j] + " ");
+		    }
+		    System.out.printf("\n");
+		}
+		
+	}
+}
+
