@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("...Printing element with maximum value...");
+		System.out.println();
+		
+		int [] marks = {97,78,68,99,90};
+		int max = 0;
+		
+		for(int e: marks) {
+		    if(e > max){
+		        max = e;
+		    }
+		}
+		System.out.println("the value of maximum value is : "+ max);
+	}
+}
