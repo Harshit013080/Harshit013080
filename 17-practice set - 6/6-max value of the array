@@ -1,5 +1,8 @@
 public class Main
 {
+    
+    //  THIS PROGRAME WILL WORK FOR POSITIVE INTEGERS ONLY....
+    
 	public static void main(String[] args) {
 		System.out.println("...Printing element with maximum value...");
 		System.out.println();
@@ -13,5 +16,20 @@ public class Main
 		    }
 		}
 		System.out.println("the value of maximum value is : "+ max);
+		System.out.println();
+		
+		
+		//  THIS PROGRAME WILL WORK FOR NEGATIVE & POSITIVE INTEGERS
+    
+    int [] num = {-2000,-1000,-100,500,20,90};
+    
+    int _max = Integer.MIN_VALUE;
+    
+    for(int e: num) {
+		    if(e > _max){
+		        _max = e;
+		    }
+		}
+		System.out.println("the value of maximum value is : "+ _max);
 	}
 }
