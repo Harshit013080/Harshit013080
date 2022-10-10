@@ -17,6 +17,8 @@ public class Main
 		System.out.println("Diff ways of using method/function");
 		System.out.println();
 		
+		//method invocation using object creation
+		
 		Main obj = new Main();
 		
 		int a = 7;
