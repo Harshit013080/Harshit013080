@@ -1,0 +1,43 @@
+public class Main
+{
+    
+    // static int sum(int a, int b){                   // NO NEED OF MAKING THIS MANY METHODS
+    //     return a + b;
+    // }
+    
+    // static int sum(int a, int b,int c){
+    //     return a + b + c;
+    // }
+    
+    static int sum(int ...arr){                        // INSTEAD
+        //available as int [] arr;
+        
+        int result = 0;
+        for(int a: arr){
+            result += a;
+        }
+        return result;
+    }
+    
+	public static void main(String[] args) {
+	  System.out.println("the sum of nothing is: "+ sum());
+	  System.out.println("the sum of 1 is: "+ sum(1));
+		System.out.println("the sum of 4 and 5 is: "+ sum(4,5));
+		System.out.println("the sum of 3, 4 and 5 is: "+ sum(3,4,5));
+		System.out.println("the sum of 2, 3, 4 and 5 is: "+ sum(3,4,5));         //this will give you an error if u haven't created a method(solution next line)
+		
+		// how many overloaded method will we make like this...cant go too far
+		
+		/*
+		   SOLUTION:::
+		   
+		   THERE IS NO NEED TO MAKE THIS MANY METHODS
+		   USE VARARGS
+		   static int sum(int ...arr){
+		       
+		   }
+		 */
+     
+     
+	}
+}
