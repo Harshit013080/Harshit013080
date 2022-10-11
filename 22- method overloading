@@ -1,0 +1,24 @@
+public class Main
+{
+    
+    static void foo(){                                                //parameter diff,name same
+        System.out.println("Good morning bro!");
+    }
+    
+    static void foo(int a){                                           //parameter diff,name same
+        System.out.println("Good morning "+ a + " Bro!");
+    }
+    
+    static void foo(int a,int b){                                     //parameter diff,name same
+        System.out.println("Good morning "+ a + " _Bro!");            //a nd b are parameters,valus
+        System.out.println("Good morning "+ b + " _Buddy!");          //will be given them further on
+    }
+                                                                      //TALKING ABT METHODS(DOWN)
+	public static void main(String[] args) {                            //changing the return type will
+		foo();                                                            //also not work...if you change
+		System.out.println();                                             //void to int return type still it 
+		foo(250);                                                         //will give u an error
+		System.out.println();
+		foo(500,1000);                                                    //arguments are actual
+	}
+}
