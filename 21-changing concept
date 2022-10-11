@@ -1,0 +1,38 @@
+public class Main
+{
+    static void change(int a){
+        a = 98;
+    }
+    
+    static void change2(int [] arr){
+        arr[0] = 98;
+    }
+    
+	public static void main(String[] args) {
+		System.out.println("Changing Concept");
+		
+		int x = 45;
+		change(x);
+		System.out.println("The value of x after running change: "+ x);
+		
+		// integer dosn't change bcz the value is been copied...
+		
+		int [] marks = {77,87,98,69,78,78};
+		change2(marks);
+		System.out.println("the value changed of x after running change is: "+ marks[0]);
+		
+		// value in array is changed 
+		
+		
+		
+		/*
+		   CONCLUSION:-
+		   
+		   AFTER USING THE FUNCTION WE CAN SEE THAT THE VALUE OF THE INTEGER CANNOT BE CHANGED bcz
+		   ITS BEEN COPIED WHERE AS,  THE  VALUE OF THE ARRAY ELEMENT IS BEEN CHANGED.
+		   
+		   the value is chajnged in the array bcz the reference(here="marks") has been sent to the
+		   change2 function 
+		*/
+	}
+}
