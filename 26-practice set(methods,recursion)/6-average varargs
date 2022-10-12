@@ -1,0 +1,24 @@
+public class Main
+{
+    
+    static double average(int ...arr) {
+        
+        int n = arr.length;
+        int sumOfNo = 0;
+        
+        for(int i: arr){
+            
+            //calculating the sum of 'n' numbers...
+            sumOfNo += i;
+        }
+        
+        return sumOfNo/n;
+    }
+    
+	public static void main(String[] args) {
+		System.out.println("taking average of 'n' numbers by making function");
+		
+		System.out.println(average(5,10,15,20));
+		System.out.println(average(10, 20, 30, 40, 50));
+	}
+}
