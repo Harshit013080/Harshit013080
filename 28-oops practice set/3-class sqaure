@@ -1,0 +1,21 @@
+class sqaure(){
+    int side;
+    
+    public int area(){
+        return side*side;
+    }
+    
+    public int perameter(){
+        return 4 * side;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		sqaure sq = new sqaure();
+		sq.side = 5;
+		System.out.println(sq.area());
+		System.out.println(sq.perameter());
+	}
+}
