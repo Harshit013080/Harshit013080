@@ -1,0 +1,41 @@
+class Employee{                //there can be only one public class in whole code
+    int id;
+    int salary;
+    String name;
+
+    public void printDetails(){
+        System.out.println("my id is" + id);
+        System.out.println("and my name is" + name);
+    }
+
+    public int getSalary(){
+        return salary;
+    }
+}
+
+public class making_custom_class{
+    public static void main(String[] args) {
+        System.out.println("This is our new custom class");
+        Employee harshit = new Employee() ;  //instantiating a new employee object
+        Employee john = new Employee();   //hence,making more object's
+
+        //setting Attributes for harshit
+
+        harshit.id = 13;
+        harshit.name = "harshit_programmer"
+        harshit.salary = 34;
+
+        //setting Attributes for john
+
+        john.id = 14;
+        john.name = "john_developer";
+        john.salary = 30;
+
+        // printing the properties/attributes
+        harshit.printDetails();
+        john.printDetails();
+        int salary = john.getSalary();
+        // System.out.println(harshit.id);
+        // System.out.println(harshit.name);
+    }
+}
