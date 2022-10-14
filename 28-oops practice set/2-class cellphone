@@ -1,0 +1,23 @@
+class cellphone(){
+    public void ring(){
+        System.out.println("ringing...");
+    }
+    
+    public void vibrate(){
+        System.out.println("vibrating...");
+    }
+    
+    public void callFriend(){
+        System.out.println("calling Harshika...");
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		cellphone realme = new cellphone();
+		
+		realme.callFriend();
+		realme.ring();
+	}
+}
