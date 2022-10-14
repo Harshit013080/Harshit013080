@@ -1,0 +1,24 @@
+class Tommy(){
+    public void hit(){
+        System.out.println("Hitting someone...");
+    }
+    
+    public void run(){
+        System.out.println("running from the police...");
+    }
+    
+    public void fire(){
+        System.out.println("Firing on the enemies");
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Tommy player_1 = new Tommy();
+		player_1.hit();
+		player_1.fire();
+		player_1.run();
+	}
+}
