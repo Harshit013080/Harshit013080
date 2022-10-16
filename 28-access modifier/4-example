@@ -49,8 +49,9 @@ public class Main
 		c_1.setArea(78.54);
 		c_1.setPerimeter(31.42);
 		
-		c_1.getRadius();
-		c_1.getArea();
-		c_1.getPerimeter();
+		System.out.println(c_1.getRadius());
+		System.out.println(c_1.getArea());
+		System.out.println(c_1.getPerimeter());
 	}
 }
+
