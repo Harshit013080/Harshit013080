@@ -1,8 +1,8 @@
 class MyEmployee{
-    private int id;
-    private String name;
-}
-
+    private int id;                        //you dont want that anyone will come and change your data
+    private String name;                   //that's the reason we use private access modifier
+}                   
+                                           //to access private stuff we use getters and setters
 public class Main
 {
 	public static void main(String[] args) {
