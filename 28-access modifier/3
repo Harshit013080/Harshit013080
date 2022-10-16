@@ -1,0 +1,38 @@
+class MyEmployee{
+    private int id;
+    private String name;
+    
+    public String getName(){                      //getter
+        return name;
+    }
+    
+    public void setName(String n)                 //setter
+        this.name = n;                            //you can also add this if u want
+    }
+    
+    public int getId(){                           //getter
+        return id;                                //you can also add this if u want
+    }
+    
+    public void setId(int i){                     //setter
+        this.id = i;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		MyEmployee harshit = new MyEmployee;
+		
+		//harshit.id = 1;
+		//harshit.name = "harshit_programmer"; -->throws an error due to private access modifier
+		
+		harshit.setName = "harshit_programmer";
+		System.out.println(harshit.getName()); //--> will give output harshit_programmer
+		
+	}
+}
+
+
+
+
