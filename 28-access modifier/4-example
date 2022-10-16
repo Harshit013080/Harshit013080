@@ -1,0 +1,56 @@
+class circle(){
+    private double radius;
+    private double area;
+    private double perimeter;
+    float pi = 3.14f
+    
+    public void setRadius(double r){
+        radius = s;
+    }
+    
+    public void setArea(double a){
+        area= a;
+    }
+    
+    public void setPerimeter(double p){
+        perimeter = p;
+    }
+    
+    
+    
+    public void getRadius(){
+        return radius;
+    }
+    
+    public void getArea(){
+        if(area == (2*pi*radius)) {
+            return area;
+        }else{
+            System.out.println("sorry...Wrong area");
+        }
+    }
+    
+    public void getPerimeter(){
+        if(perimeter = (2*pi*radius)){
+            return perimeter;
+        }else{
+            System.out.println("sorry...wrong perimeter");
+        }
+    }
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		circle c_1 = new circle;
+		
+		c_1.setRadius(5.0);
+		c_1.setArea(78.54);
+		c_1.setPerimeter(31.42);
+		
+		c_1.getRadius();
+		c_1.getArea();
+		c_1.getPerimeter();
+	}
+}
