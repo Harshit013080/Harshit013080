@@ -18,11 +18,11 @@ class circle(){
     
     
     
-    public void getRadius(){
+    public double getRadius(){
         return radius;
     }
     
-    public void getArea(){
+    public double getArea(){
         if(area == (2*pi*radius)) {
             return area;
         }else{
@@ -30,7 +30,7 @@ class circle(){
         }
     }
     
-    public void getPerimeter(){
+    public double getPerimeter(){
         if(perimeter = (2*pi*radius)){
             return perimeter;
         }else{
