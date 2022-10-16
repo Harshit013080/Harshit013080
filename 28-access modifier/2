@@ -1,0 +1,17 @@
+class MyEmployee{
+    private int id;
+    private String name;
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		MyEmployee harshit = new MyEmployee;
+		harshit.id = 1;
+		harshit.name = "harshit_programmer";
+	}
+}
+
+
+//...above programe will give you an error...//
+
