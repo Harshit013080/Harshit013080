@@ -1,0 +1,86 @@
+class MyEmployee{
+    private int id;
+    private String name;
+    
+    
+    // MAKING A "CONSTRUCTOR" --> START
+    
+    // public MyEmployee(){
+    //     id = 45;
+    //     name = "harshit";
+    // }
+    
+    // MAKING A "CONSTRUCTOR" --> END
+    
+    
+    //............................................changes........................................................
+   
+   
+   
+    //constructor with Argument
+    
+    public MyEmployee(String myName,int myId){
+        id = myId;
+        name = myName;
+    }
+    
+    
+    
+    //............................................changes........................................................
+   
+   
+   
+   public String getName(){                      
+        return name;
+    }
+    
+    public void setName(String n)                 
+        this.name = n;                            
+    }
+    
+    public int getId(){                          
+        return id;                                
+    }
+    
+    public void setId(int i){                     
+        this.id = i;
+    }
+    
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+
+
+
+//................................................changes.........................................................................
+	
+  
+  
+  
+		MyEmployee harshit = new MyEmployee("harshit_programmer",13);        //will print automatically
+ 
+ 
+ 
+ 
+//................................................changes.........................................................................
+		
+	
+  
+  
+  //we will not do this set and get again and again for every thing
+		
+		//harshit.setName = "harshit_programmer";
+		//harshit.setId = 19;
+		//System.out.println(harshit.getName());        // this things are comment out but still the constructor stuff
+		//System.out.println(harshit.getId());          // will be invoked automatically
+	                                                    // It will be printed automatically without calling
+		
+		// that's why we will use "CONSTRUCTORS"
+		
+		
+	}
+}
