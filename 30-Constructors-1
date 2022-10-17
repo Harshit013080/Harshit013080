@@ -1,0 +1,52 @@
+class MyEmployee{
+    private int id;
+    private String name;
+    
+    
+    // MAKING A "CONSTRUCTOR" --> START
+    
+    public MyEmployee(){
+        id = 45;
+        name = "harshit";
+    }
+    
+    // MAKING A "CONSTRUCTOR" --> END
+    
+    public String getName(){                      
+        return name;
+    }
+    
+    public void setName(String n)                 
+        this.name = n;                            
+    }
+    
+    public int getId(){                          
+        return id;                                
+    }
+    
+    public void setId(int i){                     
+        this.id = i;
+    }
+    
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+		MyEmployee harshit = new MyEmployee;
+		
+		//we will not do this set and get again and again for every thing
+		
+		//harshit.setName = "harshit_programmer";
+		//harshit.setId = 19;
+		//System.out.println(harshit.getName());        // this things are comment out but still the constructor stuff
+		//System.out.println(harshit.getId());          // will be invoked automatically
+	                                                    // It will be printed automatically without calling
+		
+		// that's why we will use "CONSTRUCTORS"
+		
+		
+	}
+}
