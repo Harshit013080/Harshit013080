@@ -2,7 +2,7 @@ class circle(){
     private double radius;
     private double area;
     private double perimeter;
-    float pi = 3.14f
+    float pi = 3.14f;
     
     public void setRadius(double r){
         radius = s;
@@ -43,7 +43,7 @@ class circle(){
 public class Main
 {
 	public static void main(String[] args) {
-		circle c_1 = new circle;
+		circle c_1 = new circle();
 		
 		c_1.setRadius(5.0);
 		c_1.setArea(78.54);
