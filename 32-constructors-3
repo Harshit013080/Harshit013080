@@ -1,0 +1,74 @@
+//................METHOD OVERLOADING CAN ALSO BE USED WITH CONSTRUCTOS.........................
+
+
+class MyEmployee{
+    private int id;
+    private String name;
+    
+    
+  //............................................changes........................................................
+    
+    
+    // MAKING A "CONSTRUCTOR" --> START
+    
+    public MyEmployee(){                                    //1st method
+        id = 45;
+        name = "harshit";
+    }
+    
+    // MAKING A "CONSTRUCTOR" --> END
+    
+    
+   
+    
+   
+   
+    //constructor with Argument
+    
+    public MyEmployee(String myName,int myId){              //2nd method
+        id = myId;
+        name = myName;
+    }
+    
+    
+   
+   //............................................changes........................................................
+   
+   
+    // public String getName(){                      
+    //     return name;
+    // }
+    
+    // public void setName(String n)                 
+    //     this.name = n;                            
+    // }
+    
+    // public int getId(){                          
+    //     return id;                                
+    // }
+    
+    // public void setId(int i){                     
+    //     this.id = i;
+    // }
+    
+    
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	
+//................................................changes.........................................................................
+	
+  
+  
+		MyEmployee harshit = new MyEmployee("harshit_programmer",13);   //will choose 2nd method
+		MyEmployee harshit = new MyEmployee();                          //will choose 1st method
+	
+  
+  
+//................................................changes.........................................................................  
+	}
+}
