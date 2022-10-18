@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class Game(){
+class Game{
     public int number;
     public int inputNumber;
     public int noOfGuesses = 0;
@@ -17,12 +17,12 @@ class Game(){
     public void takeUserInput(){
         System.out.print("Guess the number -> ");
         Scanner sc = new Scanner(System.in);
-        inputNumber = newInt();
+        inputNumber = sc.nextInt();
     }
     
     public void game(){
         Random ran = new Random();
-        this.number = ran.newInt(100);
+        this.number = ran.nextInt(10);
     }
     
     public boolean isCorrectNumber(){
@@ -46,13 +46,13 @@ public class Main
 {
 	public static void main(String[] args) {
 		Game g = new Game();
-		
+		g.game();
 		boolean n = false;
 		
 		while(!n){
 		    g.takeUserInput();
-		    n.isCorrectNumber();
+		    if(g.isCorrectNumber()==true)
+            break;
 		}
 	}
 }
-
