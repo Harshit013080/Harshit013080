@@ -30,12 +30,16 @@ class Game{
         
         if(inputNumber==number){
             System.out.printf("Your guess is correct, the number is %d \n",number);
+            System.out.println();
+            System.out.println();
             System.out.printf("You have guessed it in %d times", noOfGuesses);
             return true;
         } else if(inputNumber > number){
             System.out.printf("guessed number is higher \n");
+            System.out.println();
         } else if(inputNumber < number){
             System.out.printf("guessed number is lower \n");
+            System.out.println();
         }
         return false;
         
