@@ -1,0 +1,47 @@
+//constructor overloading...
+
+class rectangle{
+    
+    private int length;
+    private int breadth;
+    
+    public rectangle(){
+        this.length = 4;
+        this.breadth = 7;
+    }
+    
+    public rectangle(int length,int breadth){
+        this.length = length;
+        this.breadth = breadth;
+    }
+    
+    public int getLength(){
+        return length;
+    }
+    
+    public int getBreadth(){
+        return breadth;
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	/*	
+		rectangle rec = new rectangle();
+		System.out.println(rec.getLength());        constructor-1st is used
+		System.out.println(rec.getBreadth());
+		
+	*/
+	
+	/*
+	    rectangle rec = new rectangle(10,20);
+	    System.out.println(rec.getLength());         constructor-2nd is used    
+	    System.out.println(rec.getBreadth());   
+	*/
+	
+	}
+}
+
