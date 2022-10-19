@@ -1,0 +1,45 @@
+class cylinder{
+    private int height;
+    private int radius;
+    
+    public int getRadius(){
+        return radius;
+    }
+    
+    public void setRadius(int radius){
+        this.radius = radius;
+    }
+    
+    public int getHeight(){
+        return height;
+    }
+    
+    public void setHeight(int height){
+        this.height = height;
+    }
+    
+    public double surfaceArea(){
+        return 2*Math.PI*radius*height + 2*3.14*radius*radius; //u can use Math.PI at the place of 3.14 to produce min error
+    }
+    
+    public double volume(){
+        return Math.PI*radius*radius*height;
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		cylinder Mycylinder = new cylinder();
+		
+		Mycylinder.setHeight(12);
+		Mycylinder.setRadius(9);
+		
+		System.out.println(Mycylinder.getHeight());
+		System.out.println(Mycylinder.getRadius());
+		System.out.println(Mycylinder.surfaceArea());
+		System.out.println(Mycylinder.volume());
+	}
+}
