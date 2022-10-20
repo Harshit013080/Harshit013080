@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Hello"         <<endl<<      "World!";              // to go to next line <<endl<< is used
+
+    return 0;
+}
