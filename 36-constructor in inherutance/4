@@ -1,0 +1,35 @@
+// constructor in inheritance --> 3
+
+class Base1{
+    
+    Base1(){
+        System.out.println("I am a constructor");
+    }
+    
+    Base1(int x){
+        System.out.println("I am an overloaded constructor with value of x as:" + x);
+    }
+    
+    }
+
+class derived extends Base1{
+                                                                                                            
+    derived(){                                                    
+        // super(0);
+        System.out.println("I am a derived class constructor");
+    }
+    
+    derived(int x,int y){
+        super(x);
+        System.out.println("I am an overloaded consturctor of derived with value of y as:" + y);
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		derived d = new derived();              //this will call the constructor with no arguments         
+		derived d1 = new derived(14,19);        // this will call the constructor who is taking two int as parameters                                
+	}
+}
