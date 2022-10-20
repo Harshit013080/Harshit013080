@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Hello";
+                           
+    return 0;             // Every function ends with a return statement,
+                          // the code written after "return 0" will not be executed 
+    cout<<"World";
+}
