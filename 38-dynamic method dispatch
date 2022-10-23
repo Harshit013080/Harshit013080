@@ -1,0 +1,36 @@
+class Phone{
+    public void showtime(){
+        System.out.println("Time is 8 am");
+    }
+    
+    public void on(){
+        System.out.println("Turning on phone...");
+    }
+}
+    
+class Smartphone extends Phone{
+    public void music(){
+        System.out.println("Playing Music...");
+    }
+    
+    public void on(){
+        System.out.println("Turning on smartphone...");
+    }
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+// 		 Phone obj = new Phone();                    //  ALLOWED
+// 	     Smartphone smobj = new Smartphone();        //  ALLOWED
+	    
+	     Phone obj = new Smartphone();        // If your reference is of super class and the object is of sub-class then this is ALLOWED
+		 // Smartphone obj2 = new Phone();       // NOT ALLOWED
+		 
+		 obj.showtime();                          //bcz greet is only one
+		 obj.on();    
+		 obj.Music();                             //this will produce an error
+	}
+}
