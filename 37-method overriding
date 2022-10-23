@@ -10,7 +10,10 @@ class A{
     }
 }
 
-class B extends A{                     
+class B extends A{  
+    
+    @Override                       // you can use this keyword while overriding if you want
+                                    // helps us to know that the over-riding thing is correct or not 
     public void meth2(){                                         //over-riding method 2 
         System.out.println("I am method 2 of class B");
     }
