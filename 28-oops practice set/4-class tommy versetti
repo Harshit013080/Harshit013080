@@ -1,4 +1,4 @@
-class Tommy(){
+class Tommy{
     public void hit(){
         System.out.println("Hitting someone...");
     }
