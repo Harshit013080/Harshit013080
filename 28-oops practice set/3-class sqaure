@@ -1,4 +1,4 @@
-class sqaure(){
+class sqaure{
     int side;
     
     public int area(){
